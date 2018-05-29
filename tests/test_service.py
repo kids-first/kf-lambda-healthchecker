@@ -1,8 +1,10 @@
 import pytest
 import service
 from mock import patch
+from moto import mock_cloudwatch
 
 
+@mock_cloudwatch
 def test_handler():
     """
     Test the service handler
