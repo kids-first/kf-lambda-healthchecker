@@ -3,8 +3,8 @@ import logging
 from botocore.vendored import requests
 
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 
 def handler(event, context):
@@ -21,7 +21,4 @@ def handler(event, context):
     code = resp.status_code
 
     logger.info('{} {} {} {}'.format(SERVICE, ENDPOINT, code, t1-t0))
-
-
-if __name__ == '__main__':
-    handler({'service': 'http://google.com', 'endpoint': '/'}, {})
+    return '{} {} {} {}'.format(SERVICE, ENDPOINT, code, t1-t0)
