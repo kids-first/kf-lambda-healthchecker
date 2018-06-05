@@ -1,0 +1,2 @@
+https://kf-api-dataservice-{env}.kids-first.io,/
+https://kf-api-dataservice-{env}.kids-first.io,/status
