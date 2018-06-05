@@ -21,6 +21,7 @@ def handler(event, context):
     """
     Invoke a function for each entry in endpoints.txt
     """
+    lam = boto3.client('lambda', region_name='us-east-1')
     endpoints = open('endpoints.txt').read()
     for line in endpoints.strip().split('\n'):
         service, endpoint = line.split(',')

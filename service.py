@@ -42,12 +42,6 @@ def handler(event, context):
 		],
 		'Timestamp': time.time(),
 		'Value': t1-t0,
-		'StatisticValues': {
-		    'SampleCount': 1.0,
-		    'Sum': t1-t0,
-		    'Minimum': t1-t0,
-		    'Maximum': t1-t0
-		},
 		'Unit': 'Seconds'
 	    }
 	]
