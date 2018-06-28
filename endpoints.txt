@@ -16,3 +16,7 @@ https://kf-api-dataservice-{env}.kids-first.io,/genomic-files
 https://kf-api-dataservice-{env}.kids-first.io,/sequencing-experiments
 https://kf-api-dataservice-{env}.kids-first.io,/cavatica-tasks
 https://kf-api-dataservice-{env}.kids-first.io,/cavatica-task-genomic-files
+https://kf-release-coord-{env}.kids-first.io,/
+https://kf-release-coord-{env}.kids-first.io,/releases
+https://kf-release-coord-{env}.kids-first.io,/tasks
+https://kf-release-coord-{env}.kids-first.io,/task-services
