@@ -15,6 +15,8 @@ def handler(event, context):
     SERVICE = event['service']
     ENDPOINT = event['endpoint']
 
+    SERVICE = SERVICE.replace('-prd', '')
+
     t0 = time.time()
     resp = requests.get(SERVICE+ENDPOINT)
     t1 = time.time()
