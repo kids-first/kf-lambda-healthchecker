@@ -22,7 +22,8 @@ def test_handler():
     service.handler(event, {})
 
     assert r_mock.get.call_count == 1
-    r_mock.get.assert_called_with('http://kids-first.github.io/')
+    r_mock.get.assert_called_with('http://kids-first.github.io/',
+                                  headers={'User-Agent': 'HealthChecker'})
 
 
 @mock_cloudwatch
@@ -43,4 +44,5 @@ def test_bad_status():
     service.handler(event, {})
 
     assert r_mock.get.call_count == 1
-    r_mock.get.assert_called_with('http://kids-first.github.io/')
+    r_mock.get.assert_called_with('http://kids-first.github.io/',
+                                  headers={'User-Agent': 'HealthChecker'})
