@@ -18,7 +18,7 @@ def handler(event, context):
     SERVICE = SERVICE.replace('-prd', '')
 
     t0 = time.time()
-    if 'health_checks' in ENDPOINT:
+    if '_checks' in ENDPOINT:
         resp = requests.post(SERVICE+ENDPOINT)
     else:
         resp = requests.get(SERVICE+ENDPOINT)
