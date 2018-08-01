@@ -18,7 +18,11 @@ def handler(event, context):
     SERVICE = SERVICE.replace('-prd', '')
 
     t0 = time.time()
-    resp = requests.get(SERVICE+ENDPOINT)
+    headers = {'User-Agent': 'HealthChecker'}
+    if '_checks' in ENDPOINT:
+        resp = requests.post(SERVICE+ENDPOINT, headers=headers)
+    else:
+        resp = requests.get(SERVICE+ENDPOINT, headers=headers)
     t1 = time.time()
 
     code = resp.status_code

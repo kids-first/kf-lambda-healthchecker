@@ -20,3 +20,5 @@ https://kf-release-coord-{env}.kidsfirstdrc.org,/
 https://kf-release-coord-{env}.kidsfirstdrc.org,/releases
 https://kf-release-coord-{env}.kidsfirstdrc.org,/tasks
 https://kf-release-coord-{env}.kidsfirstdrc.org,/task-services
+https://kf-release-coord-{env}.kidsfirstdrc.org,/task-services/health_checks
+https://kf-release-coord-{env}.kidsfirstdrc.org,/tasks/status_checks
