@@ -2,4 +2,5 @@
 lambda_jenkinsfile {
     projectName = "kf-lambda-healthchecker"
     prefixName = "kf-lambda-healthchecker"
+    agentLabel = "terraform-testing"
 }
